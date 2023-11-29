@@ -1,32 +1,22 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/30279ddcaf.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Music Player</title>
+    <link href="styles.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/30279ddcaf.js" crossorigin="anonymous"></script>
+    <title>music player</title>
   </head>
   <body>
     <div class="container">
       <div id="music-player">
         <div class="music-player-image">
-          <img class="vinyl" src="./images/vinyl.svg" alt="Vinyl Record" />
-          <img
-            class="artist"
-            id="artistImage"
-            src=""
-            alt="Artist Image"
-          />
+          <img class="vinyl" src="./images/vinyl.svg" />
+          <img class="artist" src="https://i.postimg.cc/pXKT7pJn/Artist.jpg" />
         </div>
-        <div >
-          <h3 id="songTitle"></h3>
-          <p id="artistName"></p>
+        <div id="songTitle">
+          <h3>All Too Well (Taylor’s Version)</h3>
+          <p>Taylor Swift</p>
         </div>
         <div>
           <div id="seek-bar">
@@ -37,20 +27,17 @@
             <div id="seek-bar-inner">
               <div id="seek-bar-progress">
                 <audio id="song">
-                  <!-- No need to specify source here, it will be dynamically updated -->
+                  <source src="./images/Taylor Swift - All Too Well (Taylor's Version) (Lyric Video).mp3" type="audio/mp3">
                 </audio>
-                <input type="range" value="0" id="progress" />
+                <input type="range" value="0" id="progress">
+                
               </div>
             </div>
           </div>
           <div class="controls">
-            <i class="fas fa-backward-step fa-2xl" style="color: #632964"></i>
-            <i
-              class="fas fa-play fa-2xl"
-              id="playBtn"
-              style="color: #ffffff; padding-top: 3.6rem"
-            ></i>
-            <i class="fas fa-forward-step fa-2xl" style="color: #632964"></i>
+          <i class="fa-solid fa-backward-step fa-2xl" style="color: #632964;"></i>
+          <i class="fa-solid fa-play fa-2xl" id="playBtn" style="color: #ffffff;  padding-top:3.6rem;"></i>
+          <i class="fa-solid fa-forward-step fa-2xl" style="color: #632964;"></i>
           </div>
         </div>
       </div>
